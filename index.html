@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wang Zitian - UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family-Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding-top: 50px;
+  z-index: 100;
+  height: 46px;
+  margin-bottom: 98px;
+}
+
+.site-header .page-container {
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 46px;
+  background: radial-gradient(173.07% 205.27% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  color: #555555;
+  letter-spacing: -0.6px;
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-nav .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #555555;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+  .main-nav {
+    gap: 20px;
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-t-icon {
+  width: 60px;
+  height: 58px;
+  margin-bottom: 25px;
+}
+
+.hero-subtitle {
+  font-family: var(--font-tertiary);
+  font-weight: 600;
+  font-size: 47px;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.hero-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 96px;
+  color: var(--color-text-primary);
+  line-height: 1.14;
+}
+
+.hero-image img {
+  width: 439px;
+  height: 439px;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-text {
+    align-items: center;
+  }
+  .hero-title {
+    font-size: 64px;
+  }
+  .hero-subtitle {
+    font-size: 32px;
+  }
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* CSS for section section:projects */
+.projects-section {
+  margin-top: 150px;
+}
+
+.projects-header {
+  margin-bottom: 92px;
+}
+
+.projects-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.72px;
+  margin-bottom: 26px;
+}
+
+.header-divider {
+  border: none;
+  height: 2px;
+  background-color: #1b1b1b;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.project-info {
+  flex: 1;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.project-title-header h3 {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.54px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.tag-vivid { background: linear-gradient(90deg, #00afdb 0%, #ec008c 100%); }
+.tag-map { background: linear-gradient(0deg, #9d9d9d 0%, #3d3d3d 100%); }
+.tag-coffee { background: linear-gradient(90deg, #9d9d9d 0%, #2564e1 100%); }
+.tag-sun { background: linear-gradient(128deg, #ebe300 0%, #8bc54a 23.23%, #72bd5d 127.17%); }
+.tag-lucky { background: linear-gradient(90deg, #efc701 0%, #fe2800 100%); }
+
+.project-description-ch {
+  font-family: 'PingFang SC', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.42px;
+  line-height: 1.4;
+  margin-top: 36px;
+}
+
+.project-description-en {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  letter-spacing: -0.42px;
+  line-height: 1.4;
+  margin-top: 9px;
+}
+
+.project-link {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.54px;
+  margin-top: 184px;
+  border-bottom: 1px solid var(--color-text-primary);
+  padding-bottom: 4px;
+  align-self: flex-start;
+}
+
+.project-separator {
+  border: none;
+  height: 2px;
+  background-color: var(--color-divider);
+  margin: 100px 0;
+}
+
+.project-thumbnail {
+  flex-shrink: 0;
+  width: 640px;
+  height: 365px;
+  position: relative;
+}
+
+.thumbnail-base {
+  width: 100%;
+  height: 100%;
+  background-color: #d7d7d7;
+  border-radius: 20px;
+  filter: blur(4px);
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  height: 333px;
+  border: 2px solid #ffffff;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thumbnail-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 64px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.vivid-title { background-image: linear-gradient(90deg, #100e31 0%, #00afdb 50%, #ec008c 100%); }
+.map-title { background-image: linear-gradient(180deg, #555555 0%, #bbbbbb 118.59%); }
+.coffee-title { background-image: linear-gradient(90deg, #b4bbc8 0%, #2564e1 19.86%, #140c0d 39.73%); }
+.lucky-title { background-image: linear-gradient(90deg, #eecf00 0%, #ff1e00 100%); }
+
+.sun-island-ip {
+  width: 187px;
+  height: 174px;
+}
+
+.thumbnail-lines {
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 529px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.thumbnail-lines .line {
+  height: 0;
+  border-top: 5px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-info {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .project-link {
+    margin-top: 40px;
+    align-self: center;
+  }
+  .project-separator {
+    margin: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    margin-top: 80px;
+  }
+  .projects-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .project-thumbnail {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 640 / 365;
+  }
+  .thumbnail-overlay {
+    height: calc(100% - 64px);
+  }
+  .thumbnail-title {
+    font-size: 40px;
+  }
+  .thumbnail-lines {
+    width: 80%;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="page-container">
+    <nav class="main-nav">
+      <a href="#home">主页 | <strong>Home</strong></a>
+      <a href="#projects" class="nav-projects">作品 | Project <span class="arrow-down"></span></a>
+      <a href="#about">关于我 | About</a>
+    </nav>
+  </div>
+</header>
+<section id="hero" class="hero-section">
+  <div class="page-container hero-container">
+    <div class="hero-text">
+      <img src="images/78b2ce830708746d43018051b46c8ae27ce69c56.png" alt="T icon" class="hero-t-icon">
+      <h2 class="hero-subtitle">UI/UX Designer</h2>
+      <h1 class="hero-title">Wang Zitian</h1>
+    </div>
+    <div class="hero-image">
+      <img src="images/6636ab17a5048c04385f4008c5db0962a4753d44.png" alt="Wang Zitian illustration">
+    </div>
+  </div>
+  <div class="background-image">
+    <img src="images/105_310.svg" alt="">
+    <span class="sr-only">Abstract background graphic</span>
+  </div>
+</section>
+<section id="projects" class="projects-section">
+  <div class="page-container">
+    <header class="projects-header">
+      <h2 class="projects-title">项目制设计展示 | Project-based design display</h2>
+      <hr class="header-divider">
+    </header>
+
+    <div class="projects-list">
+      <article class="project-item">
+        <div class="project-info">
+          <header class="project-title-header">
+            <h3>01 / VIVID SYDNEY</h3>
+            <div class="tags">
+              <span class="tag tag-vivid">UI设计</span>
+            </div>
+          </header>
+          <p class="project-description-ch">一款可以让用户设置偏好来设计个性化行程的移动应用程序。旨在通过创新的数字解决方案提升缤纷悉尼灯光音乐节的体验。</p>
+          <p class="project-description-en">A mobile app that allows users to set preferences to design a personalised itinerary. It aims to enhance the Vivid Sydney experience through innovative digital solutions.</p>
+          <a href="#" class="project-link">关于该项目的更多细节 ↗</a>
+        </div>
+        <!--merged image-->
+        <div class="project-thumbnail">
+          <div class="thumbnail-base"></div>
+          <div class="thumbnail-overlay">
+            <h4 class="thumbnail-title vivid-title">VIVID SYDNEY</h4>
+            <div class="thumbnail-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr class="project-separator">
+
+      <article class="project-item">
+        <div class="project-info">
+          <header class="project-title-header">
+            <h3>02 / MAP MIMA</h3>
+            <div class="tags">
+              <span class="tag tag-map">用户体验设计</span>
+            </div>
+          </header>
+          <p class="project-description-ch">参与 MAP mima 公共艺术空间体验设计项目，负责前期调研与交互设计。调研时实地考察获取空间信息，分析 20 + 互动案例、10 + 文献，采访原住民及相关机构获认可。主导室内外交互设计，用极梦 AI、Figma 等做 10 + 版场景，PR 等制概念视频，最终产出设计方案用于客户提案，助力打造多媒体艺术展馆。</p>
+          <p class="project-description-en">Participated in the MAP mima public art space experience design project, responsible for preliminary research and interaction design... I also led the interior and exterior interaction design... helping to create a multimedia art exhibition hall.</p>
+          <a href="#" class="project-link">关于该项目的更多细节 ↗</a>
+        </div>
+        <!--merged image-->
+        <div class="project-thumbnail">
+          <div class="thumbnail-base"></div>
+          <div class="thumbnail-overlay">
+            <h4 class="thumbnail-title map-title">MAP MIMA</h4>
+            <div class="thumbnail-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr class="project-separator">
+
+      <article class="project-item">
+        <div class="project-info">
+          <header class="project-title-header">
+            <h3>03 / 光速咖啡</h3>
+            <div class="tags">
+              <span class="tag tag-coffee">品牌设计</span>
+            </div>
+          </header>
+          <p class="project-description-ch">该项目是为杭州生物科技谷的咖啡店做品牌设计，包括LOGO设计，店招设计以及品牌物料衍生。</p>
+          <p class="project-description-en">This project involved branding for a coffee shop in Hangzhou Biotech Valley, including logo design, signage, and branding materials.</p>
+          <a href="#" class="project-link">关于该项目的更多细节 ↗</a>
+        </div>
+        <!--merged image-->
+        <div class="project-thumbnail">
+          <div class="thumbnail-base"></div>
+          <div class="thumbnail-overlay">
+            <h4 class="thumbnail-title coffee-title">光速咖啡</h4>
+            <div class="thumbnail-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr class="project-separator">
+
+      <article class="project-item">
+        <div class="project-info">
+          <header class="project-title-header">
+            <h3>04 / 南阳光屿</h3>
+            <div class="tags">
+              <span class="tag tag-sun">品牌设计</span>
+              <span class="tag tag-sun">IP设计</span>
+            </div>
+          </header>
+          <p class="project-description-ch">该项目是为南阳光屿产业社区做品牌设计，包括Logo设计，IP形象设计以及其衍生物料。</p>
+          <p class="project-description-en">This project is to provide brand design for the Sun Island Industrial Community, including logo design, IP image design and its derivative materials.</p>
+          <a href="#" class="project-link">关于该项目的更多细节 ↗</a>
+        </div>
+        <!--merged image-->
+        <div class="project-thumbnail">
+          <div class="thumbnail-base"></div>
+          <div class="thumbnail-overlay">
+            <img src="images/I231_811_231_535.svg" alt="Sun Island IP" class="sun-island-ip">
+            <div class="thumbnail-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr class="project-separator">
+
+      <article class="project-item">
+        <div class="project-info">
+          <header class="project-title-header">
+            <h3>05 / LUCKY VITALITY</h3>
+            <div class="tags">
+              <span class="tag tag-lucky">品牌设计</span>
+              <span class="tag tag-lucky">产品设计</span>
+            </div>
+          </header>
+          <p class="project-description-ch">该项目是设计一个虚构原型。在不久的将来，BLND.lab已发展成为全球领先的盲盒文化品牌，其最受关注的创新产品之一是 Lucky Vitality——一个将自我护理重新定义为机会游戏的盲盒健康系列。</p>
+          <p class="project-description-en">The project was to design a fictional prototype. In the near future, BLND.lab has grown into a leading global brand in blind box culture... Lucky Vitality, a blind box health series that redefines self-care as a game of chance.</p>
+          <a href="#" class="project-link">关于该项目的更多细节 ↗</a>
+        </div>
+        <!--merged image-->
+        <div class="project-thumbnail">
+          <div class="thumbnail-base"></div>
+          <div class="thumbnail-overlay">
+            <h4 class="thumbnail-title lucky-title">LUCKY VITALITY</h4>
+            <div class="thumbnail-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr class="project-separator">
+
+    </div>
+  </div>
+</section>
+</body>
+</html>
