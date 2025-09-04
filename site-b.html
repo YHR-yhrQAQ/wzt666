@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - 网站B</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        header {
+            background: #ff6b6b;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav {
+            background: #f8f9fa;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff6b6b;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 30px 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .project {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h2 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .project p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .project-image {
+            height: 200px;
+            background: #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 20px 0;
+        }
+
+        .btn:hover {
+            background: #ff8e53;
+            transform: scale(1.05);
+        }
+
+        .stats {
+            background: #fff0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .stats h3 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+
+        .stats p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            width: 100%;
+            margin-top: 30px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio {
+                flex-direction: column;
+            }
+
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>创意作品集</h1>
+            <p class="subtitle">展示设计项目与创意作品</p>
+        </header>
+
+        <div class="nav">
+            <a href="#home">首页</a>
+            <a href="#projects">项目</a>
+            <a href="#about">关于我</a>
+            <a href="#contact">联系</a>
+        </div>
+
+        <div class="content">
+            <div class="portfolio">
+                <div class="project">
+                    <div class="project-image">电子商务网站设计</div>
+                    <h2>响应式电子商务UI设计</h2>
+                    <p>为一家时尚品牌设计的全响应式电子商务网站，包含产品展示、购物车和结账流程。使用React和CSS-in-JS实现。</p>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">移动应用界面</div>
+                    <h2>健康追踪移动应用</h2>
+                    <p>一款健康与健身追踪应用的UI/UX设计，包含数据可视化、活动跟踪和个性化推荐功能。</p>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">品牌标识设计</div>
+                    <h2>科技公司品牌重塑</h2>
+                    <p>为一家科技初创公司进行的全面品牌重塑，包括Logo设计、色彩方案和品牌应用指南。</p>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">插画设计</div>
+                    <h2>系列主题插画创作</h2>
+                    <p>为儿童教育应用创作的一系列主题插画，采用鲜艳色彩和友好角色设计，增强学习体验。</p>
+                </div>
+            </div>
+
+            <button class="btn" onclick="navigateToSiteA()">跳转到技术博客 (网站A)</button>
+
+            <div class="stats">
+                <h3>访问统计</h3>
+                <p>本站访问次数: <span id="site-b-count">0</span></p>
+                <p>最后访问时间: <span id="last-visited">暂无</span></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 创意作品集 - 网站B | 使用按钮可跳转到我们的技术博客</p>
+        </footer>
+    </div>
+
+    <script>
+        // 初始化访问统计
+        if (!localStorage.getItem('siteBVisits')) {
+            localStorage.setItem('siteBVisits', '0');
+        }
+
+        // 更新访问计数
+        const visits = parseInt(localStorage.getItem('siteBVisits')) + 1;
+        localStorage.setItem('siteBVisits', visits.toString());
+
+        // 更新统计显示
+        document.getElementById('site-b-count').textContent = visits;
+
+        // 显示最后访问时间
+        document.getElementById('last-visited').textContent = new Date().toLocaleString();
+
+        // 导航函数 - 跳转到网站A
+        function navigateToSiteA() {
+            // 在实际应用中，这里应该使用网站A的真实URL
+            // 由于是在同一个目录下，我们直接使用文件名
+            window.location.href = 'site-a.html';
+        }
+    </script>
+</body>
+</html>

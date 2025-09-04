@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术博客 - 网站A</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        header {
+            background: #4a00e0;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav {
+            background: #f8f9fa;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4a00e0;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 30px 0;
+            width: 100%;
+        }
+
+        .post {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post h2 {
+            color: #4a00e0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .post p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4a00e0;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 20px 0;
+        }
+
+        .btn:hover {
+            background: #3575fc;
+            transform: scale(1.05);
+        }
+
+        .stats {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .stats h3 {
+            color: #4a00e0;
+            margin-bottom: 15px;
+        }
+
+        .stats p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            width: 100%;
+            margin-top: 30px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .blog-posts {
+                flex-direction: column;
+            }
+
+            .post {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>技术博客</h1>
+            <p class="subtitle">分享编程知识与技术教程</p>
+        </header>
+
+        <div class="nav">
+            <a href="#home">首页</a>
+            <a href="#tutorials">教程</a>
+            <a href="#about">关于</a>
+            <a href="#contact">联系</a>
+        </div>
+
+        <div class="content">
+            <div class="blog-posts">
+                <div class="post">
+                    <h2>JavaScript ES2022 新特性解析</h2>
+                    <p>JavaScript语言每年都会更新，ES2022带来了许多令人兴奋的新特性，包括顶层await、类的私有字段和方法、错误原因等。本文将详细解析这些新特性并提供使用示例。</p>
+                    <p class="post-meta">发布于: 2023年10月15日 | 分类: JavaScript | 作者: 张三</p>
+                </div>
+
+                <div class="post">
+                    <h2>CSS Grid布局完全指南</h2>
+                    <p>CSS Grid布局是创建二维布局的强大工具。本文将从基础概念到高级技巧，全面介绍如何使用CSS Grid创建响应式网页布局。</p>
+                    <p class="post-meta">发布于: 2023年10月10日 | 分类: CSS | 作者: 李四</p>
+                </div>
+
+                <div class="post">
+                    <h2>Python数据分析入门：Pandas基础</h2>
+                    <p>Pandas是Python数据分析的核心库之一。本文介绍Pandas的基本数据结构DataFrame和Series，以及常用的数据操作和分析方法。</p>
+                    <p class="post-meta">发布于: 2023年10月5日 | 分类: Python | 作者: 王五</p>
+                </div>
+            </div>
+
+            <button class="btn" onclick="navigateToSiteB()">跳转到作品集网站 (网站B)</button>
+
+            <div class="stats">
+                <h3>访问统计</h3>
+                <p>本站访问次数: <span id="site-a-count">0</span></p>
+                <p>最后访问时间: <span id="last-visited">暂无</span></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 技术博客 - 网站A | 使用按钮可跳转到我们的作品集网站</p>
+        </footer>
+    </div>
+
+    <script>
+        // 初始化访问统计
+        if (!localStorage.getItem('siteAVisits')) {
+            localStorage.setItem('siteAVisits', '0');
+        }
+
+        // 更新访问计数
+        const visits = parseInt(localStorage.getItem('siteAVisits')) + 1;
+        localStorage.setItem('siteAVisits', visits.toString());
+
+        // 更新统计显示
+        document.getElementById('site-a-count').textContent = visits;
+
+        // 显示最后访问时间
+        document.getElementById('last-visited').textContent = new Date().toLocaleString();
+
+        // 导航函数 - 跳转到网站B
+        function navigateToSiteB() {
+            // 在实际应用中，这里应该使用网站B的真实URL
+            // 由于是在同一个目录下，我们直接使用文件名
+            window.location.href = 'site-b.html';
+        }
+    </script>
+</body>
+</html>
