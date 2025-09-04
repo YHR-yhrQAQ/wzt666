@@ -1,0 +1,64 @@
+:root {
+  --color-text-primary: #181717;
+  --color-text-secondary: #606060;
+  --color-text-tertiary: #868490;
+  --color-background: #f3f3f3;
+  --color-divider: #555555;
+  --font-primary: 'Helvetica', 'PingFang SC', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  --font-tertiary: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: -89px;
+  left: 0;
+  width: 100%;
+  height: 4180px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.page-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
